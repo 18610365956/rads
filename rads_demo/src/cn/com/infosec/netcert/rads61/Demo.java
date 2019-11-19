@@ -1,6 +1,7 @@
 package cn.com.infosec.netcert.rads61;
 import java.io.StringReader;
 import java.security.cert.X509Certificate;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -60,7 +61,7 @@ public class Demo {
 		Element rootElement = element.getRootElement();
 		String name = rootElement.element("name").getName();
 		String value= rootElement.element("name").getStringValue();
-		System.out.println(name+": "+value);
+		System.out.println(new Date());
 	}
 
 }
